@@ -8,6 +8,7 @@
     - Fork한 repository(예: [https://github.com/hist0613/HUFS-LAI-OOP-2025-2](https://github.com/hist0613/HUFS-LAI-OOP-2025-2))로 이동 확인 후
     - `Add file` > `Create new file` 클릭
     - `members/{본인이름}.md` 파일에 간단한 자기소개 작성 후 (`members/seungtaek.md` 참고) `Commit changes...` 버튼 클릭
+        - 자기소개 내용은 [members/seungtaek.md](https://github.com/HUFS-LAI-Seungtaek/HUFS-LAI-OOP-2025-2/tree/main/members/seungtaek.md) 참고
     - 본인 repository 메인 화면에서 `Contribute` > `Open pull request` 버튼 클릭
     - 아래와 같은 포맷으로 작성 후 `Create pull request` 버튼 클릭
         - Title: `1st Assignment by {학번} (영어 이름)` 
