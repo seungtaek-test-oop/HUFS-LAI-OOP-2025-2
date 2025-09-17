@@ -10,8 +10,7 @@ class Accumulator:
         """
         Initialize the accumulator with a starting value.
         """
-        # TODO: store the starting value on the instance (float)
-        raise NotImplementedError
+        self._total = start
 
     @property
     def total(self) -> float:
