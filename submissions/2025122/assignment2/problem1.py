@@ -11,14 +11,13 @@ class Accumulator:
         Initialize the accumulator with a starting value.
         """
         self._total = start
-
+        
     @property
     def total(self) -> float:
         """
         Read-only view of the current accumulated value.
         """
-        # TODO: return the internal total
-        raise NotImplementedError
+        return self._total
 
     @total.setter
     def total(self, value: float) -> None:
