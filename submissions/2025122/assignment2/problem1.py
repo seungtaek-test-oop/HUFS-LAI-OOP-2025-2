@@ -12,7 +12,7 @@ class Accumulator:
         """
         self._total = start
         
-    @property
+    @property  # getter
     def total(self) -> float:
         """
         Read-only view of the current accumulated value.
@@ -24,22 +24,20 @@ class Accumulator:
         """
         Educational guard: prevent direct assignment.
         """
-        # TODO: raise AssertionError (or AttributeError) with a helpful message
-        raise NotImplementedError
+        raise AssertionError
 
     def add(self, x: float) -> float:
         """
         Add x to the accumulator and return the new total.
         """
-        # TODO: update internal state and return it
-        raise NotImplementedError
+        self._total += x
+        return self._total
 
     def reset(self) -> None:
         """
         Reset the accumulator to 0.0.
         """
-        # TODO: set internal total to 0.0
-        raise NotImplementedError
+        self._total = 0
 
 
 if __name__ == "__main__":
@@ -68,5 +66,4 @@ if __name__ == "__main__":
 
         print("All Problem 1 tests passed.")
 
-    # run_tests()
-    pass
+    run_tests()
