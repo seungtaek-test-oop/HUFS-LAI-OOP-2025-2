@@ -1,47 +1,28 @@
 # problem1.py
-"""
-Problem 1 — Accumulator (stateful counter for AI pipelines)
-- Track a running sum without global variables.
-- Educate: @property (read-only) + guarded setter that blocks misuse.
-"""
 
 class Accumulator:
     def __init__(self, start: float = 0.0) -> None:
-        """
-        Initialize the accumulator with a starting value.
-        """
-        # TODO: store the starting value on the instance (float)
-        raise NotImplementedError
+        
+        self.finaltotal = start
 
     @property
     def total(self) -> float:
-        """
-        Read-only view of the current accumulated value.
-        """
-        # TODO: return the internal total
-        raise NotImplementedError
+        
+        return self.finaltotal
 
     @total.setter
     def total(self, value: float) -> None:
-        """
-        Educational guard: prevent direct assignment.
-        """
-        # TODO: raise AssertionError (or AttributeError) with a helpful message
-        raise NotImplementedError
+        raise AssertionError
+        
 
     def add(self, x: float) -> float:
-        """
-        Add x to the accumulator and return the new total.
-        """
-        # TODO: update internal state and return it
-        raise NotImplementedError
+       
+        self.finaltotal += x
+        return self.finaltotal
 
     def reset(self) -> None:
-        """
-        Reset the accumulator to 0.0.
-        """
-        # TODO: set internal total to 0.0
-        raise NotImplementedError
+        
+        self.finaltotal=0.0
 
 
 if __name__ == "__main__":
@@ -70,5 +51,5 @@ if __name__ == "__main__":
 
         print("All Problem 1 tests passed.")
 
-    # run_tests()
+    run_tests()
     pass
